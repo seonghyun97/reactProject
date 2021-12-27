@@ -6,8 +6,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/reactProject/" element={<Login />} />
-        <Route path="/reactProject/todo" element={<ToDo />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/todo" element={<ToDo />} />
       </Routes>
     </BrowserRouter>
   );
