@@ -1,13 +1,15 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./route/Login/Login";
 import ToDo from "./route/ToDo/ToDo";
 const App = () => {
   return (
-    <HashRouter>
-        <Route path="/reactProject" element={<Login />} />
-        <Route path="/reactProject/todo" element={<ToDo />} />
-    </HashRouter>
+    <BrowserRouter basename="/reactProject">
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/todo" element={<ToDo />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
