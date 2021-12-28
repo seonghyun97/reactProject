@@ -5,8 +5,8 @@ import ToDo from "./route/ToDo/ToDo";
 const App = () => {
   return (
     <HashRouter>
-        <Route exact path="/reactProject" element={<Login />} />
-        <Route exact path="/reactProject/todo" element={<ToDo />} />
+        <Route path="/reactProject" element={<Login />} />
+        <Route path="/reactProject/todo" element={<ToDo />} />
     </HashRouter>
   );
 };
